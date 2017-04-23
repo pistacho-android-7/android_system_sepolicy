@@ -76,6 +76,9 @@ allow init self:capability sys_time;
 
 allow init self:capability { sys_rawio mknod };
 
+# Set kernel module permission
+allow init self:capability { sys_module };
+
 # Mounting filesystems from block devices.
 allow init dev_type:blk_file r_file_perms;
 

@@ -217,7 +217,6 @@
 /system/bin/idmap u:object_r:idmap_exec:s0
 /system/bin/update_engine        u:object_r:update_engine_exec:s0
 /system/bin/bspatch              u:object_r:update_engine_exec:s0
-
 #############################
 # Vendor files
 #

@@ -28,7 +28,7 @@ allow ueventd dev_type:blk_file { relabelfrom relabelto create setattr unlink };
 allow ueventd self:netlink_kobject_uevent_socket create_socket_perms;
 allow ueventd efs_file:dir search;
 allow ueventd efs_file:file r_file_perms;
-
+allow ueventd system_file:file execute;
 # Use setfscreatecon() to label /dev directories and files.
 allow ueventd self:process setfscreate;
 
