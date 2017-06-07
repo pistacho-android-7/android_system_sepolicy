@@ -1,0 +1,12 @@
+type uim, domain; 
+
+type uim_exec, exec_type, file_type; 
+init_daemon_domain(uim);
+
+allow init system_file:file execute;
+allow uim  sysfs:file setattr;
+allow uim  sysfs:file getattr;
+allow uim  rootfs:lnk_file getattr;
+allow uim  sysfs:file { read open };
+allow uim  uim:capability {chown fowner };
+allow uim  uim:capability sys_module;
